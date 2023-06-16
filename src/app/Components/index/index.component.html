@@ -1,0 +1,87 @@
+<nav>
+  <ul>
+    <li><a href="#services">Trabalhos</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#Informacoes">Contato</a></li>
+  </ul>
+  <div class="logo">
+  <img id="img-logo1" src="assets/Logo2.png" alt="logo">
+  <h3 id="img-logo">Rede Solar</h3>
+</div>
+</nav>
+
+<div class="content">
+    <div class="context">
+      <h3>Economize dinheiro com energia solar!</h3>
+      <p>Pare de pagar contas de luz caras e aproveite a energia solar.</p>
+    </div>
+</div>
+
+<section id="services" data-ctt="left">
+    <div class="content-sobre">
+        <h2>Conheça nossos serviços</h2>
+    </div>
+
+    <p-carousel [style]="{'width':'80vw'}" [value]="carrosel" styleClass="custom-carousel" [numVisible]="3" [numScroll]="5" [circular]="false" [responsiveOptions]="responsiveOptions" autoPlayInterval="3000">
+        <ng-template let-data pTemplate="item">
+          <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+            <div class="mb-5">
+                <img [src]="data.image" [alt]="data.id" class="img-data shadow-2" />
+            </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</section>
+
+<section #footer id="contact" data-ctt="right">
+  <div class="contact-content">
+    <h2>Economize dinheiro e produza sua própria energia!</h2>
+    <p>Ligue agora e agende uma consulta gratuita.</p>
+    <a href="https://api.whatsapp.com/send?phone=5521964482123&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"><button id="btn-call">Solicite Agora Seu Orçamento!</button></a>
+  </div>
+</section>
+
+
+<section id="sobre" data-ctt="left">
+  <div class="card">
+    <img id="img-card" src="assets/cardi.webp" alt="card">
+    <div class="context-card">
+      <h2>Sobre nós</h2>
+      <p>A Rede solar é uma empresa com o propósito de oferecer serviço de excelência visando sempre oferecer equipamentos e serviços de qualidade para os nossos clientes.</p>
+      <a href="https://api.whatsapp.com/send?phone=5521964482123&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"><button id="btn-call">Solicite Agora Seu Orçamento!</button></a>
+    </div>
+  </div>
+</section>
+
+<section id="inf" data-ctt="right">
+  <div class="context2">
+      <h3>Nossos serviços oferecem</h3>
+    </div>
+      <p>A Rede solar é uma empresa com o propósito de oferecer serviço de excelência visando sempre oferecer equipamentos e serviços de qualidade para os nossos clientes.</p>
+
+</section>
+
+<footer  data-ctt="left">
+  <div id="Informacoes" class="content-footer">
+    <div class="inf">
+      <i class="fa-solid fa-envelope"></i>
+      <h3>oziel.amancio@gmail.com</h3>
+    </div>
+
+    <div class="inf">
+    <i class="fa-solid fa-phone"></i>
+    <h3>(21) 96448-2123</h3>
+  </div>
+
+ </div>
+
+  <div class="inf2">
+    <h2>Nossas redes sociais</h2>
+    <a href="https://www.youtube.com/@oziel_energiasolar"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</footer>
+
+<!-- <p-card [style]="{'width': '15rem'}">
+    <h3>Economize dinheiro com energia solar!</h3>
+    <p>Pare de pagar contas de luz caras e aproveite a energia solar.</p>
+</p-card> -->
