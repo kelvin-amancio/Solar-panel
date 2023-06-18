@@ -55,6 +55,29 @@ animeScroll(){
   })
 }
 
+Menu(){
+  var bar = document.getElementById('baropen') as HTMLElement;
+  var barclose = document.getElementById('barclose') as HTMLElement;
+  var menu = document.querySelector('.nav-content') as HTMLElement;
+
+  if(menu.classList.contains('open')){
+    menu.classList.remove('open');
+    barclose.style.display = "none";
+    bar.style.display = "block";
+  }else {
+    menu.classList.add('open');
+    bar.style.display = "none";
+    barclose.style.display = "block";
+ }
+
+ menu.addEventListener("click",() => {
+    menu.classList.remove('open');
+    bar.style.display = "block";
+    barclose.style.display = "none";
+ })
+
+}
+
 GetImage(){
   this.carrosel =[
   {

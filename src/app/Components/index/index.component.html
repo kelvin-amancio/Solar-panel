@@ -1,14 +1,25 @@
 <nav>
+  <div class="menu"><i class="fa-solid fa-bars" id="baropen" (click)="Menu()"></i></div>
+  <div class="menu "><i class="fa-solid fa-xmark" id="barclose" (click)="Menu()"></i></div>
+  <div class="nav-content">
   <ul>
     <li><a href="#services">Trabalhos</a></li>
     <li><a href="#sobre">Sobre</a></li>
     <li><a href="#Informacoes">Contato</a></li>
   </ul>
-  <div class="logo">
-  <img id="img-logo1" src="assets/Logo2.png" alt="logo">
-  <h3 id="img-logo">Rede Solar</h3>
 </div>
 </nav>
+<div class="nav-contentt">
+  <ul id="bar">
+    <li><a href="#services">Trabalhos</a></li>
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#Informacoes">Contato</a></li>
+    <div class="logo">
+      <img id="img-logo1" src="assets/Imagens/Logo.png" alt="logo">
+  </div>
+  </ul>
+</div>
+
 
 <div class="content">
     <div class="context">
@@ -33,11 +44,11 @@
     </p-carousel>
 </section>
 
-<section #footer id="contact" data-ctt="right">
+<section  id="contact" data-ctt="right">
   <div class="contact-content">
     <h2>Economize dinheiro e produza sua própria energia!</h2>
     <p>Ligue agora e agende uma consulta gratuita.</p>
-    <a href="https://api.whatsapp.com/send?phone=5521964482123&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"><button id="btn-call">Solicite Agora Seu Orçamento!</button></a>
+    <button id="btn-call"><a href="https://api.whatsapp.com/send?phone=5521964482123&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!">Solicite Agora Seu Orçamento!</a></button>
   </div>
 </section>
 
@@ -48,7 +59,14 @@
     <div class="context-card">
       <h2>Sobre nós</h2>
       <p>A Rede solar é uma empresa com o propósito de oferecer serviço de excelência visando sempre oferecer equipamentos e serviços de qualidade para os nossos clientes.</p>
-      <a href="https://api.whatsapp.com/send?phone=5521964482123&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!"><button id="btn-call">Solicite Agora Seu Orçamento!</button></a>
+      <div class="sub-card">
+       <p><i class="fa-solid fa-circle-check"></i>Avaliamos suas necessidades de energia</p>
+       <p><i class="fa-solid fa-circle-check"></i>Fornecemos um orçamento personalizado</p>
+       <p><i class="fa-solid fa-circle-check"></i>Instalamos seus painéis solares</p>
+       <p><i class="fa-solid fa-circle-check"></i>Conectamos seu sistema à rede elétrica</p>
+       <p><i class="fa-solid fa-circle-check"></i>Monitoramos seu sistema para garantir a máxima eficiência</p>
+      </div>
+      <button id="btn-call"><a href="https://api.whatsapp.com/send?phone=5521964482123&text=Ol%C3%A1,%20gostaria%20de%20solicitar%20um%20or%C3%A7amento!">Solicite Agora Seu Orçamento!</a></button>
     </div>
   </div>
 </section>
@@ -57,11 +75,35 @@
   <div class="context2">
       <h3>Nossos serviços oferecem</h3>
     </div>
-      <p>A Rede solar é uma empresa com o propósito de oferecer serviço de excelência visando sempre oferecer equipamentos e serviços de qualidade para os nossos clientes.</p>
 
+    <div class="inf-content">
+      <div class="services-content2">
+        <i class="fa-solid icon-services fa-hand-holding-dollar"></i>
+      <h2>Fonte renovável e inesgotável de energia</h2>
+      <h4>Chega de lidar com contas de luz extremamente altas!</h4>
+    </div>
+    <div class="services-content">
+      <i class="fa-solid icon-services fa-seedling"></i>
+      <h2>Energia limpa e sustentável</h2>
+      <h4>Sem Impacto ambiental negativo!</h4>
+    </div>
+      <div class="services-content">
+        <i class="fa-solid icon-services fa-bolt"></i>
+        <h2>Conforto e independência</h2>
+        <h4>Chega de depender de energia elétrica!</h4>
+      </div>
+      <div class="services-content">
+        <i class="fa-solid icon-services fa-house-circle-check"></i>
+        <h2>Valorização do imóvel</h2>
+        <h4>Seu imóvel muito mais valorizado no mercado!</h4>
+      </div>
+    </div>
 </section>
 
 <footer  data-ctt="left">
+  <div class="img-footer">
+    <img id="img-footer-src" src="assets/Imagens/Logo2.png" alt="logo">
+  </div>
   <div id="Informacoes" class="content-footer">
     <div class="inf">
       <i class="fa-solid fa-envelope"></i>
@@ -77,11 +119,10 @@
 
   <div class="inf2">
     <h2>Nossas redes sociais</h2>
-    <a href="https://www.youtube.com/@oziel_energiasolar"><i class="fa-brands fa-youtube"></i></a>
+    <div class="href">
+      <a href="https://www.youtube.com/@oziel_energiasolar"><i class="fa-brands fa-youtube"></i></a>
+      <a href="https://www.youtube.com/@oziel_energiasolar"><i class="fa-brands fa-instagram"></i></a>
+   </div>
   </div>
 </footer>
 
-<!-- <p-card [style]="{'width': '15rem'}">
-    <h3>Economize dinheiro com energia solar!</h3>
-    <p>Pare de pagar contas de luz caras e aproveite a energia solar.</p>
-</p-card> -->
