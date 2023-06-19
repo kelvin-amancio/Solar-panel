@@ -33,15 +33,11 @@
         <h2>Conheça nossos serviços</h2>
     </div>
 
-    <p-carousel [style]="{'width':'80vw'}" [value]="carrosel" styleClass="custom-carousel" [numVisible]="3" [numScroll]="5" [circular]="false" [responsiveOptions]="responsiveOptions" autoPlayInterval="3000">
-        <ng-template let-data pTemplate="item">
-          <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
-            <div class="mb-5">
-                <img [src]="data.image" [alt]="data.id" class="img-data shadow-2" />
-            </div>
-            </div>
-        </ng-template>
-    </p-carousel>
+  <div class="carrousell">
+    <img src="assets/Imagens/1.jpeg" alt=""  style="overflow: hidden;background-repeat:no-repeat;height: 30rem;border-radius: 7px;" class="img-data shadow-2"  />
+    <img src="assets/Imagens/2.jpeg" alt=""  style="overflow: hidden;background-repeat:no-repeat;height: 30rem;border-radius: 7px;" class="img-data shadow-2"  />
+    <img src="assets/Imagens/3.jpeg" alt=""  style="overflow: hidden;background-repeat:no-repeat;height: 30rem;border-radius: 7px;" class="img-data shadow-2"  />
+  </div>
 </section>
 
 <section  id="contact" data-ctt="right">
@@ -121,7 +117,7 @@
     <h2>Nossas redes sociais</h2>
     <div class="href">
       <a href="https://www.youtube.com/@oziel_energiasolar"><i class="fa-brands fa-youtube"></i></a>
-      <a href="https://www.youtube.com/@oziel_energiasolar"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.instagram.com/redesolar.geracao/"><i class="fa-brands fa-instagram"></i></a>
    </div>
   </div>
 </footer>

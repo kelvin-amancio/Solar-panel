@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { MenuItem } from 'primeng/api';
+import { Galleria } from 'primeng/galleria';
 import { Carrosel } from 'src/app/model/carrosel';
 import { CarroselService } from 'src/app/services/carrosel.service';
 
@@ -9,9 +10,16 @@ import { CarroselService } from 'src/app/services/carrosel.service';
   styleUrls: ['./index.component.scss']
 })
 export class IndexComponent implements OnInit {
+  @ViewChild('galleria') galleria: Galleria | undefined;
   carrosel!: Carrosel[];
   items!: MenuItem[];
   responsiveOptions!: any[];
+  images: any[] | undefined;
+  showThumbnails: boolean | undefined;
+  fullscreen: boolean = false;
+  activeIndex: number = 0;
+  onFullScreenListener: any;
+
 
  constructor(private serv: CarroselService){
   this.responsiveOptions = [
@@ -64,10 +72,12 @@ Menu(){
     menu.classList.remove('open');
     barclose.style.display = "none";
     bar.style.display = "block";
+    menu.classList.add('hide')
   }else {
     menu.classList.add('open');
     bar.style.display = "none";
     barclose.style.display = "block";
+    menu.classList.remove('hide')
  }
 
  menu.addEventListener("click",() => {
@@ -82,31 +92,38 @@ GetImage(){
   this.carrosel =[
   {
     "id":1,
-    "image":"assets/Imagens/1.jpeg"
+    "image":"assets/Imagens/1.jpeg",
+    "description":"image1"
   },
   {
     "id":2,
-    "image":"assets/Imagens/2.jpeg"
+    "image":"assets/Imagens/2.jpeg",
+    "description":"image2"
   },
   {
     "id":3,
-    "image":"assets/Imagens/3.jpeg"
+    "image":"assets/Imagens/3.jpeg",
+    "description":"image3"
   },
   {
     "id":4,
-    "image":"assets/Imagens/4.jpeg"
+    "image":"assets/Imagens/4.jpeg",
+    "description":"image4"
   },
   {
     "id":5,
-    "image":"assets/Imagens/5.jpeg"
+    "image":"assets/Imagens/5.jpeg",
+    "description":"image5"
   },
   {
     "id":6,
-    "image":"assets/Imagens/6.jpeg"
+    "image":"assets/Imagens/6.jpeg",
+    "description":"image6"
   },
   {
     "id":7,
-    "image":"assets/Imagens/7.jpeg"
+    "image":"assets/Imagens/7.jpeg",
+    "description":"image7"
   }
   ]
 }

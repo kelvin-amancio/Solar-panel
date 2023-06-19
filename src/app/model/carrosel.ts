@@ -1,4 +1,5 @@
 export interface Carrosel{
   id:number;
-  image:string;
+  image?:string;
+  description?:string
 }
